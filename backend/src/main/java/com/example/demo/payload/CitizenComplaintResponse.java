@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.demo.payload;
 
 
@@ -21,3 +22,28 @@ public class CitizenComplaintResponse {
     private LocalDateTime expectedCompletionDate;
     private LocalDateTime submissionDate;
 }
+=======
+package com.example.demo.payload;
+
+
+
+import lombok.Builder;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Data
+@Builder
+public class CitizenComplaintResponse {
+    private Long id;
+    private String title;
+    private String description;
+    private String status;
+    private String complaintStage;
+    private String officerRemark;
+    private String adminRemark;
+    private String officerEvidenceUrl;
+    private LocalDateTime expectedCompletionDate;
+    private LocalDateTime submissionDate;
+}
+>>>>>>> 93052c3527979bbe0994a8181da42a63e265a230

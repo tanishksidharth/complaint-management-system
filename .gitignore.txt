@@ -1,33 +1,53 @@
 # Backend (Spring Boot)
-backend/target/
-backend/.mvn/
-backend/mvnw
-backend/mvnw.cmd
-backend/.env
-backend/application-prod.properties
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+**/.mvn/wrapper/maven-wrapper.properties
+**/mvnw
+**/mvnw.cmd
+**/.env
+**/application-prod.properties
 
 # Frontend (React/Node)
-frontend/node_modules/
-frontend/dist/
-frontend/.env
-frontend/.env.local
-frontend/.env.production
+**/node_modules/
+**/dist/
+**/build/
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
 
 # IDE
 .idea/
 .vscode/
 *.iml
+*.ipr
+*.iws
 
 # OS
 .DS_Store
 Thumbs.db
+*.tmp
+*.temp
 
 # Logs
 *.log
+logs/
 
 # Database
 *.db
 *.sqlite
+*.h2.db
 
-# Uploads (optional - you might want to keep sample images)
-uploads/
+# Java
+*.class
+*.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Uploads (keep structure but ignore content)
+uploads/*
+!uploads/.gitkeep
